@@ -6,7 +6,7 @@ http://tools.ietf.org/html/draft-nottingham-http-problem-06
 
 ## Install
 
-Install-Package problem-json-webapi
+Install-Package problem-json-webapi -pre
 
 Add `config.UseProblemJsonExceptionFormatter();` while configuring WebAPI
 

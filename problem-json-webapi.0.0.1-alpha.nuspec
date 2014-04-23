@@ -13,5 +13,7 @@
             </group>
         </dependencies>
     </metadata>
-    <files />
+    <files>
+    	<file src="lib\" target="lib" />
+    </files>
 </package>
