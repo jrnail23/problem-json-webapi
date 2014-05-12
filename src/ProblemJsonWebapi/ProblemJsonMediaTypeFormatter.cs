@@ -11,6 +11,9 @@ namespace System.Net.Http.Formatting
     public class ProblemJsonMediaTypeFormatter : JsonMediaTypeFormatter
     {
         private const string ProblemJsonMediaType = "application/problem+json";
+        private const string CorsOriginHeader = "Access-Control-Allow-Origin";
+
+        public string CorsOriginHeaderValue { get; set; }
 
         public ProblemJsonMediaTypeFormatter()
         {
@@ -25,6 +28,10 @@ namespace System.Net.Http.Formatting
         {
             headers.ContentType = new MediaTypeHeaderValue(ProblemJsonMediaType);
             base.SetDefaultContentHeaders(type, headers, headers.ContentType);
+
+            if (!string.IsNullOrEmpty(CorsOriginHeaderValue))
+                headers.Add(CorsOriginHeader, CorsOriginHeaderValue);
+
         }
 
         public override bool CanReadType(Type type)

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>problem-json-webapi</id>
-        <version>0.0.1-alpha</version>
+        <version>0.0.2-alpha</version>
         <authors>Yury Sannikov</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Add application/problem+json formatter into WebAPI application</description>
