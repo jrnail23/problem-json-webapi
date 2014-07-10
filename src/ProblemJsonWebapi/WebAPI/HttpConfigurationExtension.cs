@@ -5,7 +5,7 @@ namespace System.Web.Http
 {
     public static class HttpConfigurationExtension
     {
-        public static void UseProblemJsonExceptionFormatter(this HttpConfiguration configuration)
+        public static void UseProblemJsonErrorFormatter(this HttpConfiguration configuration)
         {
             configuration.Formatters.Add(new ProblemJsonMediaTypeFormatter());
         }

@@ -11,6 +11,7 @@ using FluentAssertions;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
 using Ploeh.AutoFixture.AutoNSubstitute;
+using ProblemJsonWebapi.WebAPI;
 
 namespace ProblemJsonWebapi.Test
 {

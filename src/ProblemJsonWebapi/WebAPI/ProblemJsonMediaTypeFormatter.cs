@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http;
 using ProblemJsonWebapi;
+using ProblemJsonWebapi.WebAPI;
 
 // ReSharper disable once CheckNamespace
 namespace System.Net.Http.Formatting
@@ -49,7 +50,7 @@ namespace System.Net.Http.Formatting
             if (httpError == null)
                 throw new ArgumentException("value is not HttpError instance");
 
-            var problemJsonResponse = new ProblemJsonModel()
+            var problemJsonResponse = new ProblemJsonModel
             {
                 TypeUri = "about:blank",
                 Detail = httpError.ExceptionMessage,
